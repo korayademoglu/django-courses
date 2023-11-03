@@ -6,5 +6,5 @@ def home(req):
     return HttpResponse('anasayfa')
 def kurslar(req):
     return HttpResponse('kurs listesi')
-
-# Create your views here.
+def hakkimizda(req):
+    return HttpResponse('hakkımızda sayfası')
