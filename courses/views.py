@@ -6,5 +6,6 @@ def home(req):
     return HttpResponse('anasayfa')
 def kurslar(req):
     return HttpResponse('kurs listesi')
-def hakkimizda(req):
-    return HttpResponse('hakkımızda sayfası')
+
+def getCoursesByCategory(req,cat):
+    return HttpResponse(f'{cat} sayfasını getir')
