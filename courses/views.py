@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse
 
 
@@ -9,3 +9,5 @@ def kurslar(req):
 
 def getCoursesByCategory(req,cat):
     return HttpResponse(f'{cat} sayfasını getir')
+def youtubeLink(req):
+    return redirect('https://www.youtube.com')
